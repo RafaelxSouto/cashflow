@@ -1,5 +1,53 @@
+# .gitignore para projeto .NET / C# - adicionado entradas úteis para Visual Studio, Rider, e IDEs
+
+# Build outputs
 bin/
 obj/
-/packages/
+**/bin/
+**/obj/
+
+# NuGet
+*.nupkg
+packages/
+.nuget/
+project.lock.json
+project.assets.json
+
+# Visual Studio / VSCode
+.vs/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Rider / JetBrains
+.idea/
+*.iml
 riderModule.iml
-/_ReSharper.Caches/
+_ReSharper.Caches/
+*.DotSettings.user
+
+# Logs, temp files
+*.log
+*.tmp
+*.temp
+*.cache
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Publish / deployment
+publish/
+*/publish/
+
+# Misc
+*.db
+*.bak
+*.swp
+
+# Ignore node modules if present
+node_modules/
+
+# end of file
