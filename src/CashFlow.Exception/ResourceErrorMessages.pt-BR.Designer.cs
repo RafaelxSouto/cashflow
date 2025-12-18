@@ -14,21 +14,21 @@ namespace CashFlow.Exception {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class ResourcesErrorMessages {
+    internal class ResourceErrorMessages_pt_BR {
         
         private static System.Resources.ResourceManager resourceMan;
         
         private static System.Globalization.CultureInfo resourceCulture;
         
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal ResourcesErrorMessages() {
+        internal ResourceErrorMessages_pt_BR() {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        public static System.Resources.ResourceManager ResourceManager {
+        internal static System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.Equals(null, resourceMan)) {
-                    System.Resources.ResourceManager temp = new System.Resources.ResourceManager("CashFlow.Exception.ResourcesErrorMessages", typeof(ResourcesErrorMessages).Assembly);
+                    System.Resources.ResourceManager temp = new System.Resources.ResourceManager("CashFlow.Exception.ResourceErrorMessages_pt_BR", typeof(ResourceErrorMessages_pt_BR).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -36,7 +36,7 @@ namespace CashFlow.Exception {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        public static System.Globalization.CultureInfo Culture {
+        internal static System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -45,33 +45,33 @@ namespace CashFlow.Exception {
             }
         }
         
-        public static string UNKNOWN_ERROR {
-            get {
-                return ResourceManager.GetString("UNKNOWN_ERROR", resourceCulture);
-            }
-        }
-        
-        public static string PAYMENT_TYPE_INVALID {
-            get {
-                return ResourceManager.GetString("PAYMENT_TYPE_INVALID", resourceCulture);
-            }
-        }
-        
-        public static string EXPENSES_CANNOT_FOR_THE_FUTURE {
-            get {
-                return ResourceManager.GetString("EXPENSES_CANNOT_FOR_THE_FUTURE", resourceCulture);
-            }
-        }
-        
-        public static string AMOUNT_MUST_BE_GREATER_THAN_ZERO {
+        internal static string AMOUNT_MUST_BE_GREATER_THAN_ZERO {
             get {
                 return ResourceManager.GetString("AMOUNT_MUST_BE_GREATER_THAN_ZERO", resourceCulture);
             }
         }
         
-        public static string TITLE_REQUIRED {
+        internal static string EXPENSES_CANNOT_FOR_THE_FUTURE {
+            get {
+                return ResourceManager.GetString("EXPENSES_CANNOT_FOR_THE_FUTURE", resourceCulture);
+            }
+        }
+        
+        internal static string PAYMENT_TYPE_INVALID {
+            get {
+                return ResourceManager.GetString("PAYMENT_TYPE_INVALID", resourceCulture);
+            }
+        }
+        
+        internal static string TITLE_REQUIRED {
             get {
                 return ResourceManager.GetString("TITLE_REQUIRED", resourceCulture);
+            }
+        }
+        
+        internal static string UNKNOWN_ERROR {
+            get {
+                return ResourceManager.GetString("UNKNOWN_ERROR", resourceCulture);
             }
         }
     }

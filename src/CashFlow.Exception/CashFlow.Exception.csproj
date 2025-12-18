@@ -7,17 +7,44 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <EmbeddedResource Update="ResourcesErrorMessages.resx">
+      <EmbeddedResource Update="ResourceErrorMessages.resx">
         <Generator>PublicResXFileCodeGenerator</Generator>
         <LastGenOutput>ResourcesErrorMessages.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="ResourceErrorMessages.pt-BR.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>ResourceErrorMessages.pt-BR.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="ResourceErrorMessages.pt-PT.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>ResourceErrorMessages.pt-PT.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="ResourcesErrorMessages.fr.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>ResourcesErrorMessages.fr.Designer.cs</LastGenOutput>
       </EmbeddedResource>
     </ItemGroup>
 
     <ItemGroup>
-      <Compile Update="ResourcesErrorMessages.Designer.cs">
+      <Compile Update="ResourceErrorMessages.Designer.cs">
         <DesignTime>True</DesignTime>
         <AutoGen>True</AutoGen>
-        <DependentUpon>ResourcesErrorMessages.resx</DependentUpon>
+        <DependentUpon>ResourceErrorMessages.resx</DependentUpon>
+      </Compile>
+      <Compile Update="ResourceErrorMessages.pt-BR.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>ResourceErrorMessages.pt-BR.resx</DependentUpon>
+      </Compile>
+      <Compile Update="ResourceErrorMessages.pt-PT.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>ResourceErrorMessages.pt-PT.resx</DependentUpon>
+      </Compile>
+      <Compile Update="ResourcesErrorMessages.fr.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>ResourcesErrorMessages.fr.resx</DependentUpon>
       </Compile>
     </ItemGroup>
 
