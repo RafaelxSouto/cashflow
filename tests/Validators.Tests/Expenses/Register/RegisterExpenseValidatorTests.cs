@@ -2,6 +2,7 @@ using CashFlow.Application.UseCases.Expenses.Register;
 using CashFlow.Communication.Enums;
 using CashFlow.Communication.Requests;
 using CommonTestUtilities.Requests;
+using FluentAssertions;
 using Xunit;
 
 namespace Validators.Tests.Expenses.Register;
@@ -20,6 +21,6 @@ public class RegisterExpenseValidatorTests
         var result = validator.Validate(request);
 
         //Assert -> COMPARAÇÃO DO TESTE
-        Assert.True(result.IsValid);
+        result.IsValid.Should().BeTrue();
     }
 }
