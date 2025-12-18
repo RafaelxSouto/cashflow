@@ -18,6 +18,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CashFlow.Infrastructure", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Validators.Tests", "tests\Validators.Tests\Validators.Tests.csproj", "{B657C713-B376-419C-A52C-770AAA51F5FE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonTestUtilities", "tests\CommonTestUtilities\CommonTestUtilities.csproj", "{8E58ED7A-A9F3-4B27-BF52-5E30C3C7C1A2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,7 @@ Global
 		{00F3BD24-CADB-49E7-8304-E2B6516F01C5} = {13CC9386-AA07-40F0-9264-C91A8049E645}
 		{902F668C-60B5-4A1D-A242-F8CC4B1DF0AD} = {13CC9386-AA07-40F0-9264-C91A8049E645}
 		{B657C713-B376-419C-A52C-770AAA51F5FE} = {6E6AD2E5-69BA-4E25-847D-53484D8C51D5}
+		{8E58ED7A-A9F3-4B27-BF52-5E30C3C7C1A2} = {6E6AD2E5-69BA-4E25-847D-53484D8C51D5}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{2004B874-8EC3-4653-A93B-DB707CAE3FE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -61,5 +64,9 @@ Global
 		{B657C713-B376-419C-A52C-770AAA51F5FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B657C713-B376-419C-A52C-770AAA51F5FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B657C713-B376-419C-A52C-770AAA51F5FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E58ED7A-A9F3-4B27-BF52-5E30C3C7C1A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E58ED7A-A9F3-4B27-BF52-5E30C3C7C1A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E58ED7A-A9F3-4B27-BF52-5E30C3C7C1A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E58ED7A-A9F3-4B27-BF52-5E30C3C7C1A2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

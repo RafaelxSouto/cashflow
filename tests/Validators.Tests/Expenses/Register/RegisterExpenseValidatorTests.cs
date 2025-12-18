@@ -1,6 +1,7 @@
 using CashFlow.Application.UseCases.Expenses.Register;
 using CashFlow.Communication.Enums;
 using CashFlow.Communication.Requests;
+using CommonTestUtilities.Requests;
 using Xunit;
 
 namespace Validators.Tests.Expenses.Register;
@@ -12,14 +13,8 @@ public class RegisterExpenseValidatorTests
     {
         //Arrange -> PREPARAÇÃO DO TESTE
         var validator = new RegisterExpenseValidator();
-        var request = new RequestRegisterExpenseJson
-        {
-            Amount = 100,
-            Date = DateTime.Now.AddDays(-1),
-            Description = "Bought a new Apple Watch",
-            Title = "Apple Watch",
-            PaymentsType = CashFlow.Communication.Enums.PaymentsType.CreaditCard
-        };
+        var request = new RequestRegisterExpenseJsonBuilder().Build();
+        
 
         //Act -> AÇÃO DE TESTE
         var result = validator.Validate(request);
